@@ -38,15 +38,15 @@ main.ipynb: Full exploratory data analysis and model tuning process.
 import joblib
 import pandas as pd
 
-# 1. Load the model and scaler
+#### 1. Load the model and scaler
 model = joblib.load('telco_churn_model.pkl')
 scaler = joblib.load('telco_churn_scaler.pkl')
 
-# 2. Prepare raw data (ensure column order matches training)
+#### 2. Prepare raw data (ensure column order matches training)
 features = ['tenure', 'MonthlyCharges', 'TotalCharges', ...] 
 new_data = pd.DataFrame([[12, 70.5, 846.0, ...]], columns=features)
 
-# 3. Scale and Predict with the custom 0.40 threshold
+### 3. Scale and Predict with the custom 0.40 threshold
 scaled_data = scaler.transform(new_data)
 probs = model.predict_proba(scaled_data)[:, 1]
 prediction = (probs > 0.40).astype(int)
