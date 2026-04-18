@@ -1,5 +1,8 @@
-Telco Customer Churn Prediction 🚀
-This project implements a machine learning pipeline to predict customer attrition (churn) for a telecommunications company. The primary goal was to move beyond simple accuracy and build a model that actually catches the customers most likely to leave, providing high utility for retention marketing.
+# Telco Customer Churn Analysis & Prediction
+## Project Overview
+#### Customer churn is a major problem in the telecom industry. This project analyzes customer data to identify the key factors that lead to churn and builds a machine learning model to predict whether a customer is likely to leave.
+
+The goal is to move beyond raw data and provide actionable insights that can help businesses improve customer retention.
 
 📊 The "Accuracy Trap" & Performance
 In this project, I intentionally moved away from a "high accuracy" model (73%) that missed half of the churners, in favor of a Tuned Random Forest that prioritizes Recall.
